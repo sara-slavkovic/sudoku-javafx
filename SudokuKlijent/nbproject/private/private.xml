@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/Korisnik/Desktop/javafx_sudoku/SudokuKlijent/src/izmena_korisnika/FXMLIzmenaKorisnika.fxml</file>
+            <file>file:/C:/Users/Korisnik/Desktop/javafx_sudoku/SudokuKlijent/src/DomenskiObjekat/NivoTezine.java</file>
+            <file>file:/C:/Users/Korisnik/Desktop/javafx_sudoku/SudokuKlijent/src/mainscreen/KontrolerGUIMain.java</file>
+            <file>file:/C:/Users/Korisnik/Desktop/javafx_sudoku/SudokuKlijent/src/rang_lista/KontrolerGUIRangLista.java</file>
+            <file>file:/C:/Users/Korisnik/Desktop/javafx_sudoku/SudokuKlijent/src/DomenskiObjekat/StatusIgre.java</file>
+            <file>file:/C:/Users/Korisnik/Desktop/javafx_sudoku/SudokuKlijent/src/mainscreen/JFXMain.java</file>
+            <file>file:/C:/Users/Korisnik/Desktop/javafx_sudoku/SudokuKlijent/src/CSS/alert.css</file>
+            <file>file:/C:/Users/Korisnik/Desktop/javafx_sudoku/SudokuKlijent/src/CSS/sudoku.css</file>
+            <file>file:/C:/Users/Korisnik/Desktop/javafx_sudoku/SudokuKlijent/src/rang_lista/FXMLRangListaController.java</file>
+            <file>file:/C:/Users/Korisnik/Desktop/javafx_sudoku/SudokuKlijent/src/register/FXMLRegisterController.java</file>
+            <file>file:/C:/Users/Korisnik/Desktop/javafx_sudoku/SudokuKlijent/src/pocetna/JFXPocetna.java</file>
+            <file>file:/C:/Users/Korisnik/Desktop/javafx_sudoku/SudokuKlijent/src/konverter/KonverterGUIDK.java</file>
+            <file>file:/C:/Users/Korisnik/Desktop/javafx_sudoku/SudokuKlijent/src/rang_lista/FXMLRangLista.fxml</file>
+            <file>file:/C:/Users/Korisnik/Desktop/javafx_sudoku/SudokuKlijent/src/DomenskiObjekat/Operations.java</file>
+            <file>file:/C:/Users/Korisnik/Desktop/javafx_sudoku/SudokuKlijent/src/login/FXMLLoginController.java</file>
+            <file>file:/C:/Users/Korisnik/Desktop/javafx_sudoku/SudokuKlijent/src/soket_klijent_kontroler/KontrolerKlijent.java</file>
+            <file>file:/C:/Users/Korisnik/Desktop/javafx_sudoku/SudokuKlijent/src/register/FXMLRegister.fxml</file>
+            <file>file:/C:/Users/Korisnik/Desktop/javafx_sudoku/SudokuKlijent/src/izmena_korisnika/JFXIzmenaKorisnika.java</file>
+            <file>file:/C:/Users/Korisnik/Desktop/javafx_sudoku/SudokuKlijent/src/login/JFXLogin.java</file>
+            <file>file:/C:/Users/Korisnik/Desktop/javafx_sudoku/SudokuKlijent/src/DomenskiObjekat/AbstractDomainObject.java</file>
+            <file>file:/C:/Users/Korisnik/Desktop/javafx_sudoku/SudokuKlijent/src/DomenskiObjekat/Korisnik.java</file>
+            <file>file:/C:/Users/Korisnik/Desktop/javafx_sudoku/SudokuKlijent/src/rang_lista/JFXRangLista.java</file>
+            <file>file:/C:/Users/Korisnik/Desktop/javafx_sudoku/SudokuKlijent/src/igra/KontrolerGUIIgra.java</file>
+            <file>file:/C:/Users/Korisnik/Desktop/javafx_sudoku/SudokuKlijent/src/izmena_korisnika/KontrolerGUIIzmenaKorisnika.java</file>
+            <file>file:/C:/Users/Korisnik/Desktop/javafx_sudoku/SudokuKlijent/src/helpers/IgraHelper.java</file>
+            <file>file:/C:/Users/Korisnik/Desktop/javafx_sudoku/SudokuKlijent/src/igra/FXMLIgra.fxml</file>
+            <file>file:/C:/Users/Korisnik/Desktop/javafx_sudoku/SudokuKlijent/src/mainscreen/FXMLGlavnaFormaController.java</file>
+            <file>file:/C:/Users/Korisnik/Desktop/javafx_sudoku/SudokuKlijent/src/pocetna/KontrolerGUIPocetna.java</file>
+            <file>file:/C:/Users/Korisnik/Desktop/javafx_sudoku/SudokuKlijent/src/igra/FXMLIgraController.java</file>
+            <file>file:/C:/Users/Korisnik/Desktop/javafx_sudoku/SudokuKlijent/src/helpers/SudokuTablaHelper.java</file>
+            <file>file:/C:/Users/Korisnik/Desktop/javafx_sudoku/SudokuKlijent/src/helpers/DialogHelper.java</file>
+            <file>file:/C:/Users/Korisnik/Desktop/javafx_sudoku/SudokuKlijent/src/DomenskiObjekat/Igra.java</file>
+            <file>file:/C:/Users/Korisnik/Desktop/javafx_sudoku/SudokuKlijent/src/mainscreen/FXMLGlavnaForma.fxml</file>
+            <file>file:/C:/Users/Korisnik/Desktop/javafx_sudoku/SudokuKlijent/src/CSS/login_register.css</file>
+            <file>file:/C:/Users/Korisnik/Desktop/javafx_sudoku/SudokuKlijent/src/register/JFXRegister.java</file>
+            <file>file:/C:/Users/Korisnik/Desktop/javafx_sudoku/SudokuKlijent/src/login/KontrolerGUILogin.java</file>
+            <file>file:/C:/Users/Korisnik/Desktop/javafx_sudoku/SudokuKlijent/src/register/KontrolerGUIRegister.java</file>
+            <file>file:/C:/Users/Korisnik/Desktop/javafx_sudoku/SudokuKlijent/src/pocetna/FXMLPocetna.fxml</file>
+            <file>file:/C:/Users/Korisnik/Desktop/javafx_sudoku/SudokuKlijent/src/CSS/main.css</file>
+            <file>file:/C:/Users/Korisnik/Desktop/javafx_sudoku/SudokuKlijent/src/DomenskiObjekat/SudokuTabla.java</file>
+            <file>file:/C:/Users/Korisnik/Desktop/javafx_sudoku/SudokuKlijent/src/CSS/rang_lista.css</file>
+            <file>file:/C:/Users/Korisnik/Desktop/javafx_sudoku/SudokuKlijent/src/login/FXMLLogin.fxml</file>
+            <file>file:/C:/Users/Korisnik/Desktop/javafx_sudoku/SudokuKlijent/src/igra/JFXIgra.java</file>
+            <file>file:/C:/Users/Korisnik/Desktop/javafx_sudoku/SudokuKlijent/src/pocetna/FXMLPocetnaController.java</file>
+            <file>file:/C:/Users/Korisnik/Desktop/javafx_sudoku/SudokuKlijent/src/CSS/igra.css</file>
+            <file>file:/C:/Users/Korisnik/Desktop/javafx_sudoku/SudokuKlijent/src/CSS/pocetna.css</file>
+            <file>file:/C:/Users/Korisnik/Desktop/javafx_sudoku/SudokuKlijent/src/izmena_korisnika/FXMLIzmenaKorisnikaController.java</file>
+        </group>
+    </open-files>
+</project-private>

@@ -1,0 +1,77 @@
+.sudoku-alert {
+    -fx-background-color: linear-gradient(to bottom right, #0b132b, #1c2541, #3a506b);
+    -fx-padding: 20;
+}
+
+.sudoku-alert .label {
+    -fx-text-fill: #dce6f2;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Segoe UI";
+    -fx-wrap-text: true;
+    -fx-text-overrun: clip;
+    -fx-max-width: 400px;
+}
+
+.sudoku-alert .header-panel {
+    -fx-background-color: transparent;
+}
+
+.sudoku-alert .header-panel .label {
+    -fx-text-fill: #66fcf1;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.7), 10, 0.4, 0, 3);
+}
+
+.sudoku-alert .button {
+    -fx-background-color: linear-gradient(to bottom, #5bc0be, #3aafa9);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-font-family: "Segoe UI";
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-padding: 7 18 7 18;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.45), 10, 0.3, 0, 3);
+}
+
+.sudoku-alert .button:hover {
+    -fx-background-color: linear-gradient(to bottom, #6fffe9, #4ecdc4);
+    -fx-scale-x: 1.03;
+    -fx-scale-y: 1.03;
+}
+
+.sudoku-alert .button:pressed {
+    -fx-background-color: #2b7a78;
+    -fx-scale-x: 0.98;
+    -fx-scale-y: 0.98;
+}
+
+.sudoku-alert .combo-box {
+    -fx-background-color: #1c2541;
+    -fx-text-fill: #dce6f2;
+    -fx-font-size: 14px;
+    -fx-font-family: "Segoe UI";
+    -fx-border-color: #5bc0be;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+.sudoku-alert .combo-box .list-cell {
+    -fx-background-color: #1c2541;
+    -fx-text-fill: #dce6f2;
+    -fx-font-size: 14px;
+    -fx-font-family: "Segoe UI";
+}
+
+.sudoku-alert .combo-box-popup .list-view {
+    -fx-background-color: #1c2541;
+    -fx-border-color: #5bc0be;
+}
+
+.sudoku-alert .combo-box-popup .list-view .list-cell:hover {
+    -fx-background-color: #3a506b;
+    -fx-text-fill: #66fcf1;
+}

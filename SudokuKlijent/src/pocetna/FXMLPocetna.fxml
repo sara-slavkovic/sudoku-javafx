@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" stylesheets="@../CSS/pocetna.css" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pocetna.FXMLPocetnaController">
+    <children>
+        <Label layoutX="205.0"
+               layoutY="65.0"
+               text="SUDOKU"
+               styleClass="title-label" />
+
+        <Button fx:id="login"
+                layoutX="220.0"
+                layoutY="165.0"
+                prefHeight="45.0"
+                prefWidth="160.0"
+                text="Prijavi se" />
+
+        <Button fx:id="register"
+                layoutX="220.0"
+                layoutY="235.0"
+                prefHeight="45.0"
+                prefWidth="160.0"
+                mnemonicParsing="false"
+                text="Registruj se" />
+    </children>
+</AnchorPane>

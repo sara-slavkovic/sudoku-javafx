@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (https://github.com/eclipse-ee4j/metro-jax-ws). RI's version is Eclipse Metro/2.4.8 (RELEASE-2.4.8-e044505; 2022-01-04T13:29:23+0000) JAXWS-RI/2.3.5 JAXWS-API/2.3.3 JAXB-RI/2.3.5 JAXB-API/2.3.3 git-revision#e044505. --><xs:schema xmlns:tns="http://Server/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://Server/">
+
+<xs:element name="Exception" type="tns:Exception"/>
+
+<xs:element name="registrujKorisnika" type="tns:registrujKorisnika"/>
+
+<xs:element name="registrujKorisnikaResponse" type="tns:registrujKorisnikaResponse"/>
+
+<xs:element name="vratiRangListu" type="tns:vratiRangListu"/>
+
+<xs:element name="vratiRangListuResponse" type="tns:vratiRangListuResponse"/>
+
+<xs:complexType name="registrujKorisnika">
+<xs:sequence>
+<xs:element name="arg0" type="tns:korisnik" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="korisnik">
+<xs:complexContent>
+<xs:extension base="tns:abstractDomainObject">
+<xs:sequence>
+<xs:element name="id" type="xs:int"/>
+<xs:element name="korisnickoIme" type="xs:string" minOccurs="0"/>
+<xs:element name="lozinka" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="abstractDomainObject" abstract="true">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="registrujKorisnikaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Exception">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="vratiRangListu">
+<xs:sequence>
+<xs:element name="arg0" type="tns:igra" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="igra">
+<xs:complexContent>
+<xs:extension base="tns:abstractDomainObject">
+<xs:sequence>
+<xs:element name="brojGresaka" type="xs:int"/>
+<xs:element name="datumIgre" type="tns:date" minOccurs="0"/>
+<xs:element name="id" type="xs:int"/>
+<xs:element name="korisnik" type="tns:korisnik" minOccurs="0"/>
+<xs:element name="nivoTezine" type="xs:int"/>
+<xs:element name="vremeResavanja" type="xs:int"/>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+
+<xs:complexType name="date">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="vratiRangListuResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:igra" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

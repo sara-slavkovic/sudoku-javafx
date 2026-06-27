@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" stylesheets="@../CSS/login_register.css" xmlns:fx="http://javafx.com/fxml/1" fx:controller="izmena_korisnika.FXMLIzmenaKorisnikaController">
+     <children>
+        <Label layoutX="220.0"
+               layoutY="35.0"
+               text="Izmena podataka o korisniku"
+               styleClass="title-label" />
+
+        <Label layoutX="80.0"
+               layoutY="105.0"
+               text="Korisničko ime:" />
+
+        <TextField fx:id="korisnickoIme"
+                   layoutX="230.0"
+                   layoutY="100.0"
+                   prefHeight="34.0"
+                   prefWidth="250.0" />
+
+        <Label layoutX="80.0"
+               layoutY="160.0"
+               text="Lozinka:" />
+
+        <PasswordField fx:id="lozinka"
+                       layoutX="230.0"
+                       layoutY="155.0"
+                       prefHeight="34.0"
+                       prefWidth="250.0" />
+
+        <Button fx:id="registerBtn"
+                layoutX="345.0"
+                layoutY="230.0"
+                prefHeight="38.0"
+                prefWidth="135.0"
+                mnemonicParsing="false"
+                text="Izmeni" />
+    </children>
+</AnchorPane>

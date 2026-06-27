@@ -1,0 +1,45 @@
+.sudoku-polje {
+    -fx-background-color: #1e1e2e;
+    -fx-text-fill: #cdd6f4;
+    -fx-font-size: 18px;
+    -fx-font-weight: normal;
+    -fx-alignment: center;
+    -fx-border-color: #45475a;
+    -fx-border-width: 0.5;
+    -fx-pref-width: 52px;
+    -fx-pref-height: 52px;
+}
+
+.sudoku-polje-unapred {
+    -fx-background-color: #313244;
+    -fx-text-fill: #89b4fa;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+    -fx-border-color: #45475a;
+    -fx-border-width: 0.5;
+    -fx-pref-width: 52px;
+    -fx-pref-height: 52px;
+}
+
+.sudoku-polje-greska {
+    -fx-background-color: #1e1e2e;
+    -fx-text-fill: #f38ba8;
+    -fx-font-size: 18px;
+    -fx-alignment: center;
+    -fx-border-color: #f38ba8;
+    -fx-border-width: 0.5;
+    -fx-pref-width: 52px;
+    -fx-pref-height: 52px;
+}
+
+.sudoku-polje-tacno {
+    -fx-background-color: #1e1e2e;
+    -fx-text-fill: #a6e3a1;
+    -fx-font-size: 18px;
+    -fx-alignment: center;
+    -fx-border-color: #45475a;
+    -fx-border-width: 0.5;
+    -fx-pref-width: 52px;
+    -fx-pref-height: 52px;
+}

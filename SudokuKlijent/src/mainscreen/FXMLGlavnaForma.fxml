@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+ 
+ <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="backgroundimg" stylesheets="@../CSS/main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainscreen.FXMLGlavnaFormaController">
+    <children>
+      <MenuBar fx:id="glavniMeni"
+                 AnchorPane.topAnchor="0.0"
+                 AnchorPane.leftAnchor="0.0"
+                 AnchorPane.rightAnchor="0.0"
+                 prefHeight="32.0">
+        <menus>
+  <Menu fx:id="igraj" mnemonicParsing="false" text="Igraj ">
+  
+               <items>
+  
+            <MenuItem fx:id="novaIgra" mnemonicParsing="false" text="Nova igra" />  
+            <MenuItem fx:id="nastaviIgru" mnemonicParsing="false" text="Nastavi zapocetu igru" />  
+               </items>
+  
+          </Menu>           
+  <Menu fx:id="rezultati" mnemonicParsing="false" text="Rezultati ">
+  
+               <items>
+  
+            <MenuItem fx:id="rangLista" mnemonicParsing="false" text="Prikazi rang listu" />  
+               </items>
+  
+          </Menu>           
+  <Menu fx:id="korisnik" mnemonicParsing="false" text="Korisnik ">
+  
+               <items>
+  
+            <MenuItem fx:id="izmeniKorisnika" mnemonicParsing="false" text="Izmeni podatke o korisniku" />  
+            <MenuItem fx:id="odjaviSe" mnemonicParsing="false" text="Odjavi se" />  
+               </items>
+  
+          </Menu>           
+  <Menu fx:id="izlazIzPrograma" mnemonicParsing="false" text="Izlaz ">
+  
+               <items>
+  
+            <MenuItem fx:id="izlaz" mnemonicParsing="false" text="Izlaz iz programa" />  
+               </items>
+  
+          </Menu>           
+        </menus>
+      </MenuBar>
+        <VBox alignment="CENTER"
+              spacing="15.0"
+              AnchorPane.topAnchor="32.0"
+              AnchorPane.bottomAnchor="0.0"
+              AnchorPane.leftAnchor="0.0"
+              AnchorPane.rightAnchor="0.0">
+            <children>
+                <Label text="SUDOKU" styleClass="main-title" />
+                <Label text="Dobrodošli u igru" styleClass="subtitle-label" />
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

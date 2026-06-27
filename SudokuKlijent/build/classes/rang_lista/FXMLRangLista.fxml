@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane id="BorderPane" prefHeight="500.0" prefWidth="600.0" stylesheets="@../CSS/rang_lista.css" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rang_lista.FXMLRangListaController">
+    <top>
+        <VBox alignment="CENTER" spacing="8.0" styleClass="top-panel">
+            <children>
+                <Label text="RANG LISTA" styleClass="title-label"/>
+                <Label fx:id="nivoLabel" text="Nivo: -" styleClass="info-label"/>
+            </children>
+        </VBox>
+    </top>
+    <center>
+        <VBox alignment="CENTER" spacing="15.0" style="-fx-padding: 20;">
+            <children>
+                <TableView fx:id="rangTabela" prefHeight="400.0" prefWidth="550.0" styleClass="rang-tabela">
+                    <columns>
+                        <TableColumn fx:id="redniBrojKolona" text="#" prefWidth="50.0"/>
+                        <TableColumn fx:id="korisnikKolona" text="Korisničko ime" prefWidth="204.0"/>
+                        <TableColumn fx:id="vremeKolona" text="Vreme rešavanja" prefWidth="150.0"/>
+                        <TableColumn fx:id="greskeKolona" text="Broj grešaka" prefWidth="150.0"/>
+                    </columns>
+                </TableView>
+            </children>
+        </VBox>
+    </center>
+</BorderPane>

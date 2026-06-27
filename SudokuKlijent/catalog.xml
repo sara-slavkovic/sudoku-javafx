@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="file:/C:/Users/Korisnik/Downloads/GenerickiKontrolerServer.wsdl" uri="xml-resources/web-service-references/GenerickiKontrolerServer_2/wsdl/GenerickiKontrolerServer.wsdl"/>
+    <system systemId="http://localhost:8080/SudokuWebServer/GenerickiKontrolerServer?xsd=1" uri="xml-resources/web-service-references/GenerickiKontrolerServer_2/wsdl/localhost_8080/SudokuWebServer/GenerickiKontrolerServer.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/SudokuWebServer/GenerickiKontrolerServer?wsdl" uri="xml-resources/web-service-references/GenerickiKontrolerServer/wsdl/localhost_8080/SudokuWebServer/GenerickiKontrolerServer.wsdl"/>
+    <system systemId="http://localhost:8080/SudokuWebServer/GenerickiKontrolerServer?null" uri="xml-resources/web-service-references/GenerickiKontrolerServer/wsdl/localhost_8080/SudokuWebServer/GenerickiKontrolerServer.null.xml"/>
+</catalog>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane id="BorderPane" prefHeight="620.0" prefWidth="780.0" stylesheets="@../CSS/igra.css" xmlns:fx="http://javafx.com/fxml/1" fx:controller="igra.FXMLIgraController">
+    <top>
+        <VBox alignment="CENTER" spacing="8.0" styleClass="top-panel">
+            <children>
+                <Label text="SUDOKU" styleClass="title-label" />
+                <Label fx:id="infoLabel" text="Popunite prazna polja brojevima od 1 do 9" styleClass="info-label" />
+           
+                <HBox alignment="CENTER" spacing="25.0">
+                    <children>
+                        <Label fx:id="nivoLabel" text="Nivo: -" styleClass="info-label" />
+                        <Label fx:id="vremeLabel" text="Vreme: 00:00" styleClass="info-label" />
+                        <Label fx:id="greskeLabel" text="Greške: 0" styleClass="info-label" />
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </top>
+
+    <center>
+        <VBox alignment="CENTER" spacing="18.0">
+            <children>
+
+                <GridPane fx:id="sudokuGrid"
+                          alignment="CENTER"
+                          gridLinesVisible="true"
+                          styleClass="sudoku-grid" />
+
+                <HBox alignment="CENTER" spacing="15.0">
+                    <children>
+                        <Button fx:id="novaIgraBtn" text="Nova igra" />
+                        <Button fx:id="odustaniBtn" text="Odustani" />
+                    </children>
+                </HBox>
+
+            </children>
+        </VBox>
+    </center>
+</BorderPane>

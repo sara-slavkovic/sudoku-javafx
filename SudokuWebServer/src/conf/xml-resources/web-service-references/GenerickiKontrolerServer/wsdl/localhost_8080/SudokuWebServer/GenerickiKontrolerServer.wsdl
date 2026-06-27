@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+    xmlns:tns="http://Server/"
+    xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+    name="GenerickiKontrolerServer"
+    targetNamespace="http://Server/">
+
+  <wsdl:types>
+    <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+               xmlns:tns="http://Server/"
+               attributeFormDefault="unqualified"
+               elementFormDefault="unqualified"
+               targetNamespace="http://Server/">
+
+      <!-- registrujKorisnika -->
+      <xs:element name="registrujKorisnika" type="tns:registrujKorisnika"/>
+      <xs:element name="registrujKorisnikaResponse" type="tns:registrujKorisnikaResponse"/>
+
+      <!-- vratiRangListu -->
+      <xs:element name="vratiRangListu" type="tns:vratiRangListu"/>
+      <xs:element name="vratiRangListuResponse" type="tns:vratiRangListuResponse"/>
+
+      <!-- Exception -->
+      <xs:element name="Exception" type="tns:Exception"/>
+
+      <!-- AbstractDomainObject -->
+      <xs:complexType abstract="true" name="abstractDomainObject">
+        <xs:sequence/>
+      </xs:complexType>
+
+      <!-- Korisnik -->
+      <xs:complexType name="korisnik">
+        <xs:complexContent>
+          <xs:extension base="tns:abstractDomainObject">
+            <xs:sequence>
+              <xs:element name="id" type="xs:int"/>
+              <xs:element minOccurs="0" name="korisnickoIme" type="xs:string"/>
+              <xs:element minOccurs="0" name="lozinka" type="xs:string"/>
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+
+      <!-- SudokuTabla -->
+      <xs:complexType name="sudokuTabla">
+        <xs:complexContent>
+          <xs:extension base="tns:abstractDomainObject">
+            <xs:sequence>
+              <xs:element name="id" type="xs:int"/>
+              <xs:element minOccurs="0" name="pocetnaTabla" type="xs:string"/>
+              <xs:element minOccurs="0" name="resenjeTabla" type="xs:string"/>
+              <xs:element name="nivoTezine" type="xs:int"/>
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+
+      <!-- Igra -->
+      <xs:complexType name="igra">
+        <xs:complexContent>
+          <xs:extension base="tns:abstractDomainObject">
+            <xs:sequence>
+              <xs:element name="id" type="xs:int"/>
+              <xs:element name="vremeResavanja" type="xs:int"/>
+              <xs:element name="brojGresaka" type="xs:int"/>
+              <xs:element name="nivoTezine" type="xs:int"/>
+              <xs:element name="status" type="xs:int"/>
+              <xs:element minOccurs="0" name="trenutnoStanje" type="xs:string"/>
+              <xs:element minOccurs="0" name="datumIgre" type="xs:string"/>
+              <xs:element minOccurs="0" name="korisnik" type="tns:korisnik"/>
+              <xs:element minOccurs="0" name="sudokuTabla" type="tns:sudokuTabla"/>
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+
+      <!-- Operacije -->
+      <xs:complexType name="registrujKorisnika">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="tns:korisnik"/>
+        </xs:sequence>
+      </xs:complexType>
+
+      <xs:complexType name="registrujKorisnikaResponse">
+        <xs:sequence>
+          <xs:element name="return" type="xs:int"/>
+        </xs:sequence>
+      </xs:complexType>
+
+      <xs:complexType name="vratiRangListu">
+        <xs:sequence>
+          <xs:element name="arg0" type="xs:int"/>
+        </xs:sequence>
+      </xs:complexType>
+
+      <xs:complexType name="vratiRangListuResponse">
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="return" type="tns:igra"/>
+        </xs:sequence>
+      </xs:complexType>
+
+      <xs:complexType name="Exception">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="message" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+
+    </xs:schema>
+  </wsdl:types>
+
+  <wsdl:message name="registrujKorisnika">
+    <wsdl:part element="tns:registrujKorisnika" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="registrujKorisnikaResponse">
+    <wsdl:part element="tns:registrujKorisnikaResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="vratiRangListu">
+    <wsdl:part element="tns:vratiRangListu" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="vratiRangListuResponse">
+    <wsdl:part element="tns:vratiRangListuResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="Exception">
+    <wsdl:part element="tns:Exception" name="Exception"/>
+  </wsdl:message>
+
+  <wsdl:portType name="GenerickiKontrolerServer">
+    <wsdl:operation name="registrujKorisnika">
+      <wsdl:input message="tns:registrujKorisnika" name="registrujKorisnika"/>
+      <wsdl:output message="tns:registrujKorisnikaResponse" name="registrujKorisnikaResponse"/>
+      <wsdl:fault message="tns:Exception" name="Exception"/>
+    </wsdl:operation>
+    <wsdl:operation name="vratiRangListu">
+      <wsdl:input message="tns:vratiRangListu" name="vratiRangListu"/>
+      <wsdl:output message="tns:vratiRangListuResponse" name="vratiRangListuResponse"/>
+      <wsdl:fault message="tns:Exception" name="Exception"/>
+    </wsdl:operation>
+  </wsdl:portType>
+
+  <wsdl:binding name="GenerickiKontrolerServerSoapBinding" type="tns:GenerickiKontrolerServer">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="registrujKorisnika">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="registrujKorisnika">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="registrujKorisnikaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="vratiRangListu">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="vratiRangListu">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="vratiRangListuResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+
+  <wsdl:service name="GenerickiKontrolerServer">
+    <wsdl:port binding="tns:GenerickiKontrolerServerSoapBinding" name="GenerickiKontrolerServerPort">
+      <soap:address location="http://localhost:8080/SudokuWebServer/GenerickiKontrolerServer"/>
+    </wsdl:port>
+  </wsdl:service>
+
+</wsdl:definitions>
