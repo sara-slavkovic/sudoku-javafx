@@ -1,0 +1,6 @@
+*/build/
+SudokuKlijent/dist/SudokuKlijent.jar
+SudokuServer/dist/SudokuServer.jar
+SudokuWebServer/build/
+**/*.class
+Thumbs.db
